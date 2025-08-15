@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Classic Chicken Burger",
+    "description": "Crispy fried chicken with lettuce and mayo",
+    "category": "burgers",
+    "price": 7.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Family Bucket",
+    "description": "10 pieces fried chicken + 4 sides",
+    "category": "buckets",
+    "price": 24.99,
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Golden Fries",
+    "description": "Crispy french fries",
+    "category": "sides",
+    "price": 3.49,
+    "imageUrl": "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  }
+]
