@@ -101,6 +101,17 @@ curl -s -X POST http://localhost:5000/api/orders \
  -d '{"items":[{"itemId":"<menuItemId>","qty":2}]}' | jq .
 ```
 
+## Create an admin account
+
+- During registration, include `adminCode` equal to your server's `ADMIN_CODE` to create an admin.
+- Example:
+
+```
+curl -s -X POST http://localhost:5000/api/auth/register \
+ -H 'Content-Type: application/json' \
+ -d '{"name":"Admin","email":"admin@example.com","password":"secret","adminCode":"supersecretcode"}' | jq .
+```
+
 ## Deployment tips
 
 - Client: build with `npm run build` (Vercel). Set `VITE_API_BASE_URL` to deployed server URL.
