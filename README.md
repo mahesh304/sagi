@@ -4,12 +4,16 @@ Production-ready, responsive MERN app resembling KFC/Burger King style.
 
 ## ACCEPTANCE CHECKLIST
 
-- [ ] `npm run dev` in `/server` and `/client` starts both apps and they communicate
-- [ ] Admin file upload serves from `/uploads` and image shows in Menu
-- [ ] Adding items/offers appears in Cart with correct totals; Proceed creates order visible in Admin
-- [ ] Bottom Offer Box present and animated on Home & Menu; keyboard accessible; dismissal persists
-- [ ] Category slider works on desktop & mobile and updates menu with smooth animations
-- [ ] README shows env vars, run steps, admin creation via `ADMIN_CODE`, deployment tips
+- [ ] cd server && npm run dev starts server and connects to MongoDB.
+- [ ] cd client && npm run dev starts client at :5173 and calls server API.
+- [ ] Register a user (email or phone) and admin (use ADMIN_CODE); login works and JWT stored.
+- [ ] Admin can upload an image from local machine and see /uploads/<file>.
+- [ ] Admin can create menu items with uploaded image or external URL.
+- [ ] Category slider shows all categories with icons, is swipeable, keyboard accessible.
+- [ ] Selecting a category filters items with smooth animation.
+- [ ] Bottom OfferBox is visible on Home & Menu, animates on content change, and Add button adds the offer to cart.
+- [ ] Cart totals are correct; clicking “Proceed” creates order visible in admin orders list.
+- [ ] Pages are responsive (mobile, tablet, desktop) and accessible: alt tags, focus outlines, aria-live for cart updates.
 
 ## Tech Stack
 
