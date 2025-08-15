@@ -2,25 +2,18 @@ import { useEffect, useState } from 'react';
 import api from '../api/axios';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import ImageUploader from '../components/ImageUploader';
 
 export default function Admin() {
 	const user = useSelector((s) => s.auth.user);
 	const navigate = useNavigate();
 	const [form, setForm] = useState({ name: '', description: '', category: 'burgers', price: '', imageUrl: '' });
-	const [file, setFile] = useState(null);
 	const [orders, setOrders] = useState([]);
 
 	useEffect(() => {
 		if (!user || user.role !== 'admin') navigate('/');
 	}, [user, navigate]);
 
-	async function uploadFile() {
-		if (!file) return;
-		const formData = new FormData();
-		formData.append('image', file);
-		const { data } = await api.post('/api/menu/upload', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
-		setForm((f) => ({ ...f, imageUrl: data.imageUrl }));
-	}
 
 	async function createItem(e) {
 		e.preventDefault();
@@ -61,9 +54,8 @@ export default function Admin() {
 					</select>
 					<input type="number" step="0.01" required placeholder="Price" value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value })} className="border rounded px-2 py-1" />
 					<input placeholder="Image URL (optional)" value={form.imageUrl} onChange={(e) => setForm({ ...form, imageUrl: e.target.value })} className="border rounded px-2 py-1 col-span-full" />
-					<div className="col-span-full flex items-center gap-2">
-						<input type="file" accept="image/*" onChange={(e) => setFile(e.target.files?.[0] || null)} />
-						<button type="button" onClick={uploadFile} className="px-3 py-1 rounded border">Upload File</button>
+					<div className="col-span-full">
+						<ImageUploader value={form.imageUrl} onUploaded={(url) => setForm((f) => ({ ...f, imageUrl: url }))} />
 					</div>
 					<button className="col-span-full px-4 py-2 rounded bg-[color:var(--color-brand-red)] text-white">Create</button>
 				</form>

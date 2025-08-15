@@ -12,7 +12,7 @@ PORT=5000
 MONGO_URI=mongodb://localhost:27017/sfc
 JWT_SECRET=replace-with-strong-secret
 ADMIN_CODE=supersecretcode
-CORS_ORIGIN=http://localhost:5173
+ORIGIN=http://localhost:5173
 ```
 
 2) Install & run:
