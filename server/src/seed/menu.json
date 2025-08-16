@@ -1,0 +1,235 @@
+[
+  {
+    "name": "Classic Chicken Burger",
+    "description": "Crispy fried chicken with lettuce and mayo",
+    "category": "burgers",
+    "price": 7.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Spicy Chicken Burger",
+    "description": "Hot and spicy fried chicken with jalapeños",
+    "category": "burgers",
+    "price": 8.99,
+    "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Double Chicken Burger",
+    "description": "Two crispy chicken patties with cheese",
+    "category": "burgers",
+    "price": 11.99,
+    "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Veggie Burger",
+    "description": "Plant-based patty with fresh vegetables",
+    "category": "burgers",
+    "price": 6.99,
+    "imageUrl": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Coca Cola",
+    "description": "Classic Coca Cola 330ml",
+    "category": "drinks",
+    "price": 2.49,
+    "imageUrl": "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Sprite",
+    "description": "Refreshing Sprite 330ml",
+    "category": "drinks",
+    "price": 2.49,
+    "imageUrl": "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Orange Juice",
+    "description": "Fresh squeezed orange juice",
+    "category": "drinks",
+    "price": 3.99,
+    "imageUrl": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Iced Coffee",
+    "description": "Cold brewed coffee with cream",
+    "category": "drinks",
+    "price": 4.49,
+    "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "BBQ Sauce",
+    "description": "Sweet and smoky BBQ sauce",
+    "category": "sauces",
+    "price": 1.49,
+    "imageUrl": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Hot Sauce",
+    "description": "Spicy hot sauce for the brave",
+    "category": "sauces",
+    "price": 1.49,
+    "imageUrl": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Ranch Dressing",
+    "description": "Creamy ranch dressing",
+    "category": "sauces",
+    "price": 1.49,
+    "imageUrl": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Golden Fries",
+    "description": "Crispy french fries",
+    "category": "snacks",
+    "price": 3.49,
+    "imageUrl": "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Onion Rings",
+    "description": "Crispy battered onion rings",
+    "category": "snacks",
+    "price": 4.49,
+    "imageUrl": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Chicken Nuggets",
+    "description": "8 pieces of crispy chicken nuggets",
+    "category": "snacks",
+    "price": 5.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Popcorn Chicken",
+    "description": "Bite-sized crispy chicken pieces",
+    "category": "snacks",
+    "price": 4.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Chicken Combo",
+    "description": "Burger + Fries + Drink",
+    "category": "combos",
+    "price": 12.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Family Combo",
+    "description": "2 Burgers + 2 Fries + 2 Drinks",
+    "category": "combos",
+    "price": 22.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Student Combo",
+    "description": "Burger + Fries + Drink (Student discount)",
+    "category": "combos",
+    "price": 9.99,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324d4df17fc?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Family Bucket",
+    "description": "10 pieces fried chicken + 4 sides",
+    "category": "buckets",
+    "price": 24.99,
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Party Bucket",
+    "description": "20 pieces fried chicken + 6 sides",
+    "category": "buckets",
+    "price": 44.99,
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Small Bucket",
+    "description": "6 pieces fried chicken + 2 sides",
+    "category": "buckets",
+    "price": 16.99,
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Coleslaw",
+    "description": "Fresh cabbage coleslaw",
+    "category": "sides",
+    "price": 2.99,
+    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Mashed Potatoes",
+    "description": "Creamy mashed potatoes with gravy",
+    "category": "sides",
+    "price": 3.99,
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Corn on the Cob",
+    "description": "Grilled corn with butter",
+    "category": "sides",
+    "price": 2.99,
+    "imageUrl": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Baked Beans",
+    "description": "Sweet and savory baked beans",
+    "category": "sides",
+    "price": 2.99,
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Chocolate Sundae",
+    "description": "Vanilla ice cream with chocolate sauce",
+    "category": "desserts",
+    "price": 4.99,
+    "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Apple Pie",
+    "description": "Warm apple pie with cinnamon",
+    "category": "desserts",
+    "price": 5.99,
+    "imageUrl": "https://images.unsplash.com/photo-1535920527002-bc0c2d2a5bff?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Chocolate Chip Cookies",
+    "description": "Fresh baked chocolate chip cookies",
+    "category": "desserts",
+    "price": 3.99,
+    "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "name": "Milkshake",
+    "description": "Creamy vanilla milkshake",
+    "category": "desserts",
+    "price": 4.99,
+    "imageUrl": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  }
+]
+
