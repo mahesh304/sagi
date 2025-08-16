@@ -21,7 +21,7 @@ export default function Login() {
 		setError('');
 
 		try {
-			const { data } = await api.post('/api/auth/login', formData);
+			const { data } = await api.post(`${import.meta.env.VITE_API_BASE_URL}/api/auth/login`, formData);
 			
 			// Check if user is trying to login as admin
 			if (isAdmin && data.user.role !== 'admin') {
