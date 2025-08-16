@@ -21,7 +21,7 @@ export default function Orders() {
 	const loadUserOrders = async () => {
 		setLoading(true);
 		try {
-			const { data } = await api.get('/api/orders/my-orders');
+			const { data } = await api.get(`${import.meta.env.VITE_API_BASE_URL}/api/orders/my-orders`);
 			setOrders(data);
 		} catch (error) {
 			console.error('Failed to load orders:', error);
