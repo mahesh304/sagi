@@ -17,11 +17,11 @@ export default function Menu() {
 			try {
 				if (active === 'all') {
 					// Load all items without category filter
-					const { data } = await api.get(`${import.meta.env.VITE_API_BASE_URL}/api/menu`);
+					const { data } = await api.get('/api/menu');
 					if (!ignore) setItems(data);
 				} else {
 					// Load items by category
-					const { data } = await api.get(`${import.meta.env.VITE_API_BASE_URL}/api/menu`, { params: { category: active } });
+					const { data } = await api.get('/api/menu', { params: { category: active } });
 					if (!ignore) setItems(data);
 				}
 			} catch (error) {
