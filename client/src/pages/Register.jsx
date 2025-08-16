@@ -37,7 +37,7 @@ export default function Register() {
 		}
 
 		try {
-			const { data } = await api.post(`${import.meta.env.VITE_API_BASE_URL}/api/auth/register`, {
+			const { data } = await api.post('/api/auth/register', {
 				name: formData.name,
 				email: formData.email,
 				phone: formData.phone,
