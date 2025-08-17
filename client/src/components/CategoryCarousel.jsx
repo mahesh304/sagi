@@ -54,21 +54,21 @@ export default function CategoryCarousel({ active, onChange }) {
 			<div ref={containerRef} tabIndex={0} aria-label="Food categories" className="outline-none">
 				<div ref={sliderRef} className="keen-slider">
 					{CATEGORIES.map((category) => (
-						<button
-							key={category.id}
-							onClick={() => onChange(category.id)}
-							className={`keen-slider__slide flex flex-col items-center justify-center gap-3 p-4 rounded-2xl border-2 transition-all duration-200 min-h-[100px] ${
-								active === category.id 
-									? 'bg-brand-red border-brand-red text-white shadow-lg scale-105' 
-									: `${category.color} hover:scale-105 hover:shadow-md`
-							}`}
-							aria-pressed={active === category.id}
-						>
-							<span className="text-3xl">{category.icon}</span>
-							<span className={`text-sm font-semibold ${active === category.id ? 'text-white' : 'text-gray-700'}`}>
-								{category.label}
-							</span>
-						</button>
+										<button
+											key={category.id}
+											onClick={() => onChange(category.id)}
+											className={`keen-slider__slide flex flex-col items-center justify-center gap-2 p-2 rounded-xl border-2 transition-all duration-200 min-h-[60px] ${
+												active === category.id 
+													? 'bg-brand-red border-brand-red text-white shadow-lg scale-105' 
+													: `${category.color} hover:scale-105 hover:shadow-md`
+											}`}
+											aria-pressed={active === category.id}
+										>
+											<span className="text-xl">{category.icon}</span>
+											<span className={`text-xs font-semibold ${active === category.id ? 'text-white' : 'text-gray-700'}`}>
+												{category.label}
+											</span>
+										</button>
 					))}
 				</div>
 			</div>
