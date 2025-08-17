@@ -93,7 +93,7 @@ export default function Menu() {
 			</div>
 
 			{/* Bottom Offer */}
-			{offer && <BottomOfferBox offer={offer} />}
+{/* 			{offer && <BottomOfferBox offer={offer} />} */}
 		</div>
 	);
 }
