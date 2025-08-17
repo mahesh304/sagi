@@ -1,6 +1,7 @@
+import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
-import Intro from './components/Intro'
+import AnimationIntro from './components/AnimationIntro'
 import LiveAnnouncer from './components/LiveAnnouncer'
 import MobileBottomNav from './components/MobileBottomNav'
 import Navbar from './components/Navbar'
@@ -13,9 +14,26 @@ import Orders from './pages/Orders'
 import Register from './pages/Register'
 
 export default function App() {
+  const [showIntro, setShowIntro] = useState(false)
+
+  useEffect(() => {
+    const played = localStorage.getItem('sfc_intro_played')
+    if (!played) {
+      setShowIntro(true)
+    }
+  }, [])
+
+  const handleIntroFinish = () => {
+    localStorage.setItem('sfc_intro_played', 'true')
+    setShowIntro(false)
+  }
+
+  if (showIntro) {
+    return <AnimationIntro onFinish={handleIntroFinish} />
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Intro />
       <LiveAnnouncer />
       <Navbar />
       <main className="flex-1 pb-20 md:pb-0">
