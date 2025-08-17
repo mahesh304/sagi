@@ -107,6 +107,7 @@ export default function AnimationIntro({ onFinish }) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          marginTop: '-200px', 
         }}
       >
         {/* Text and burger stacked and centered */}
