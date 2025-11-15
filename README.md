@@ -1,5 +1,6 @@
 # SFC (Sagi Fried Chickens) — MERN App
-
+** LIVE DEMO :** https://sagi-ui.onrender.com/
+---
 Production-ready, responsive MERN app resembling KFC/Burger King style.
 
 ## ACCEPTANCE CHECKLIST
